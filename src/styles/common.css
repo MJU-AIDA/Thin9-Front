@@ -121,3 +121,36 @@ img {
   background-color: rgb(60, 179, 113);
   color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 150px;
+    height: 15px;
+  }
+
+  .main {
+    padding-top: 50px;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .title span {
+    font-size: 20px;
+  }
+
+  .nav_item {
+    margin-right: 20px;
+  }
+
+  .button {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .login_btn {
+    margin-right: 5px;
+  }
+}

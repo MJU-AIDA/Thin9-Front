@@ -115,3 +115,24 @@ img {
   background-color: rgb(60, 179, 113);
   color: rgb(255, 255, 255);
 }
+
+@media (max-width: 768px) {
+  .header {
+    height: 50px; /* 헤더 높이 축소 */
+    padding: 0 10px; /* 좌우 여백 축소 */
+  }
+
+  .title span {
+    font-size: 20px; /* 타이틀 글자 크기 축소 */
+  }
+
+  .nav_item {
+    margin-right: 20px; /* 네비게이션 항목 간격 축소 */
+  }
+
+  .button {
+    width: 80px; /* 버튼 너비 축소 */
+    height: 35px; /* 버튼 높이 축소 */
+    line-height: 35px; /* 버튼 높이와 일치하도록 수정 */
+  }
+}
