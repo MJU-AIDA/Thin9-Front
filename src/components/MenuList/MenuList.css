@@ -35,3 +35,28 @@
   height: 20px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .menu-item {
+    display: flex;
+    height: 15px;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    background-color: rgb(224, 224, 224);
+    padding: 0px 5px;
+  }
+  
+  .menu-item img {
+    width: 6px;
+    height: 6px;
+    margin-right: 3px;
+  }
+  
+  .menu-item input {
+    width: 10px; 
+    height: 10px;
+  }
+}
