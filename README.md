@@ -16,7 +16,7 @@ docker-compose up -d
 ```
 
 
-## Instally
+## Install
 yarn
 
 yarn add @nivo/line axios dotenv bootstrap react-bootstrap react-router-dom web-vitals
