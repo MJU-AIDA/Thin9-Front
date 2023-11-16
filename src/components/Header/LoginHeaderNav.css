@@ -113,9 +113,14 @@ img {
 }
 
 .logout_btn {
-  /* background-color: #100f0d; */
-  color: #d0d0d0;
+  color: #d0d0d0; 
   cursor: pointer;
+  transition: color 0.3s; /* 색상 변화를 부드럽게 만들기 위한 트랜지션 설정 */
+
+  /* hover 시에 색상 변경 */
+  &:hover {
+    color: black; /* hover 시의 색상 (검정색) */
+  }
 }
 
 .username {

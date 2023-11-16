@@ -19,7 +19,7 @@ function Join() {
 
 
   // api url
-  const url = `${process.env.REACT_APP_BACKEND_URL}/api/accounts/register/`;
+  const url = "/api/accounts/register/";
 
 
   const navigate = useNavigate();
@@ -89,12 +89,6 @@ function Join() {
                   onChange={handleChange}
                   required
                 />
-              <button
-                type="button"
-                // onClick={goToNextForm}
-              >
-                <a href="#">아이디 중복 확인</a>
-              </button>
               </li>
               <li className="login-item">
                 <label>비밀번호</label>
@@ -107,25 +101,6 @@ function Join() {
                   onChange={handleChange}
                   required
                 />
-              </li>
-              <li className="login-item">
-                <label>비밀번호</label>
-                <input
-                  type="password"
-                  id="pw"
-                  name="password"
-                  placeholder="비밀번호"
-                  value={formData.password}
-                  onChange={handleChange}
-                  required
-                />
-              <button
-                type="button"
-                // onClick={goToNextForm}
-              >
-                <a href="#">비밀번호 확인</a>
-              </button>
-
               </li>
               <li className="login-item">
                 <label>이름</label>
@@ -139,26 +114,7 @@ function Join() {
                   required
                 />
               </li>
-
-            </ul>
-            <button
-              type="button"
-              className="button submit-btn"
-              onClick={goToNextForm}
-            >
-              <a href="#">Continue</a>
-            </button>
-          </form>
-
-          {/* 두번째 form */}
-          <form
-            onSubmit={handleSubmit}
-            action="url"
-            method="POST"
-            style={{ display: form2Visible ? "block" : "none" }}
-          >
-            <ul className="login-list">
-            <li className="login-item">
+              <li className="login-item">
                 <label>생년월일</label>
                 <input
                   type="date"
@@ -169,6 +125,23 @@ function Join() {
                 />
                 <br />
               </li>
+            </ul>
+            <button
+              type="button"
+              className="button submit-btn"
+              onClick={goToNextForm}
+            >
+              <a href="#">Continue</a>
+            </button>
+          </form>
+          {/* 두번째 form */}
+          <form
+            onSubmit={handleSubmit}
+            action="url"
+            method="POST"
+            style={{ display: form2Visible ? "block" : "none" }}
+          >
+            <ul className="login-list">
               <li className="login-item">
                 <label>성별</label>
                 <div className="radio-container">
